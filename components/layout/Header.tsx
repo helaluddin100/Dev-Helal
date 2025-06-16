@@ -18,6 +18,7 @@ const Header = () => {
     { name: 'Home', href: '/' },
     { name: 'About', href: '/about' },
     { name: 'Services', href: '/services' },
+    { name: 'Portfolio', href: '/portfolio' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ];
@@ -66,7 +67,7 @@ const Header = () => {
               >
                 <Link
                   href={item.href}
-                  className={`relative text-sm font-medium transition-all duration-300 hover:text-purple-600 ${
+                  className={`relative text-lg font-medium transition-all duration-300 hover:text-purple-600 ${
                     pathname === item.href
                       ? 'text-purple-600'
                       : 'text-gray-700 dark:text-gray-300'
@@ -154,7 +155,7 @@ const Header = () => {
                   >
                     <Link
                       href={item.href}
-                      className={`block px-4 py-3 text-base font-medium rounded-xl transition-all duration-300 ${
+                      className={`block px-4 py-3 text-lg font-medium rounded-xl transition-all duration-300 ${
                         pathname === item.href
                           ? 'text-purple-600 bg-purple-50 dark:bg-purple-900/20'
                           : 'text-gray-700 dark:text-gray-300 hover:text-purple-600 hover:bg-purple-50 dark:hover:bg-purple-900/20'
